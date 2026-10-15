@@ -1,0 +1,513 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+}
+
+/* Fuentes y tamaños */
+h1 {
+    font-size: 1.5em;
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+}
+
+h2 {
+    font-size: 2em;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 600;
+}
+
+
+h3 {
+    font-size: 1.5em;
+    font-family: "DM sans", sans-serif;
+    font-weight: 600;
+}
+
+h4 {
+    font-size: 2em;
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+}
+
+h5 {
+    font-size: 1em;
+    font-family: "DM sans", sans-serif;
+    font-weight: 500;
+    color: #DF0CCA;
+}
+
+p {
+    font-size: 1em;
+}
+
+ul li {
+    list-style-type: none;
+    text-decoration: none;
+    color: white;
+    padding: 0.5em;
+}
+
+.text-inter {
+    font-family: "Inter", sans-serif;
+    font-weight: 300;
+}
+
+.text-dm {
+    font-family: "DM sans", sans-serif;
+    font-weight: 400;
+}
+
+.precio {
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+}
+
+a {
+    text-decoration: none;
+    font-size: 1em;
+}
+
+.form {
+    font-size: 1.25em;
+}
+
+/* Botones */
+button {
+    font-family: "DM sans", sans-serif;
+    font-size: 1em;
+    font-weight: 600;
+    padding: 0.25em 1.5em;
+    border-radius: 5px;
+    border: 0px none;
+    color: #f5f5f5;
+    background-color: black;
+    line-height: 1.5em;
+}
+
+button:hover {
+    background-color: #DF0CCA;
+}
+
+button:active {
+    background-color: #FEF0FD;
+    color: rgba(0, 0, 0, 0.25)
+}
+
+.boton-nav {
+    font-family: "DM sans", sans-serif;
+    font-size: 1em;
+    font-weight: 600;
+    padding: 0.5em;
+    border-radius: 8px;
+    border: 0px none;
+    color: #f5f5f5;
+    background-color: black;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); /* box-shadow: posx px posy px largosombre px black */
+    line-height: 1em;
+}
+
+.container {
+    max-width: 1440px;
+    margin: auto;
+}
+
+.color-acento {
+    color: #DF0CCA;
+}
+
+header {
+    background-color: #FEF0FD;
+}
+
+header .logo {
+    margin:0;
+    padding: 2.25em 4.75em;
+}
+
+header .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: nowrap;
+    padding-bottom: 1.75em;
+}
+
+header a {
+    padding: 0.59375em 1.5em;
+    font-weight: 600;
+    color: black;
+}
+
+header a:hover {
+    color: #DF0CCA;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 25.625em;
+    padding-top: 3.75em;
+    padding-bottom: 5.625em;
+    padding-left: 1em;
+    padding-right: 1em;
+    background-image: linear-gradient(
+        0deg,
+        rgba(255,255,255,0.5),
+        rgba(255,255,255,0.5)
+    )
+    ,url("img/banner-fondo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.promo-mama {
+    background-color: white;
+}
+
+.promo-mama .container {
+    text-align: center;
+    padding: 6.25em 1em;
+}
+
+.promo-mama h4 {
+    margin-top: 0;
+}
+
+.promo-mama p{
+    display: none;
+}
+
+.promo-mama .oferta {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding: 3.125em;
+    margin: 1em;
+    border-radius: 0.3125em;
+}
+
+.oferta:first-child {
+    background-image: linear-gradient(
+        0deg,
+        rgba(255,255,255,0.5),
+        rgba(255,255,255,0.5)
+    )
+    ,url("img/promo1.jpeg");
+}
+
+.oferta:nth-child(2) {
+    background-image: linear-gradient(
+        0deg,
+        rgba(255,255,255,0.5),
+        rgba(255,255,255,0.5)
+    )
+    ,url("img/promo2.jpeg");
+}
+
+.oferta:nth-child(3) {
+    background-image: linear-gradient(
+        0deg,
+        rgba(255,255,255,0.5),
+        rgba(255,255,255,0.5)
+    )
+    ,url("img/promo3.jpeg");
+}
+
+#testimonios {
+    background-color: #FEF0FD;
+}
+
+#testimonios .container {
+    text-align: center;
+    padding: 3.125em;
+}
+
+.testimonial {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: end;
+    padding: 1em 1em;
+    margin: 1em 1em;
+}
+
+.testimonial .foto-testimonial {
+    max-width: 50ch;
+    min-height: 1ch;
+    min-width: 1ch;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.servicios-cards {
+    background-color: white;
+    margin-top: 4.25em;
+}
+
+.servicios-cards h4{
+    text-align: center;
+}
+
+.servicios-cards .container {
+    display: flex;
+    flex-direction: column;
+}
+
+.servicios-cards .card {
+    background-color: #FBFBFB;
+    padding: 1em;
+    border-radius: 1em;
+    margin: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    min-width: 20.5em;
+    min-height: 25.25em;
+    gap: 1em;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+}
+
+.servicios-cards .foto-card {
+    max-width: 60ch;
+    min-height: 40ch;
+    min-width: 40ch;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1em;
+}
+
+#nosotros {
+    background-color: #FEF0FD;
+}
+
+#nosotros .container {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 3.25em;
+}
+
+#nosotros h4 {
+    text-align: center;
+    padding-top: 3.25em;
+}
+
+.nosotros-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+#nosotros .nosotros-foto {
+    max-width: 70ch;
+    min-height: 40ch;
+    min-width: 40ch;
+    padding: 1em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#agenda h4 {
+    text-align: center;
+}
+
+#agenda hr {
+    color: #DF0CCA;
+    border: 1px solid;
+    margin: 2.8125em 0.25em;
+}
+
+#agenda .formulario {
+    display: flex;
+    flex-direction: column;
+    max-width: 27em;
+    margin: 2rem auto;
+    padding: 2em;
+}
+
+#agenda .form2 {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    display: block;
+    width: 100%;
+    border: 1px solid black;
+    padding: 1em;
+    font-size: 1.25em;
+    border-radius: 0.5em;
+}
+
+#agenda label {
+    display: block;
+    padding: 1em 1.5em;
+    font-size: 1.25em;
+    text-align: left;
+}
+
+select {
+    display: flex;
+    justify-content: center;
+    border: none;
+    appearance: none;
+    font-size: 1.25em;
+}
+
+.select-box {
+    width: 100%;
+    border: 1px solid black;
+    padding: 1em;
+    border-radius: 0.5em;
+}
+
+#agenda .cta {
+    margin-top: 2em;
+    font-family: "DM sans", sans-serif;
+    font-size: 1em;
+    font-weight: 600;
+    padding: 0.25em 1.5em;
+    border-radius: 5px;
+    border: 0px none;
+    color: #f5f5f5;
+    background-color: black;
+    line-height: 1.5em;
+}
+
+footer {
+    background-color: black;
+}
+
+footer .container {
+    padding-top: 3.5em;
+    padding-bottom: 5.75em;
+    padding-right: 2.875em;
+    padding-left: 2.875em;
+    margin-top: 4.3125em;
+}
+
+footer .services {
+    display: none;
+}
+
+footer .about {
+    display: none;
+}
+
+footer .social {
+    display: flex;
+    gap: 1em;
+}
+
+/* Mobile first listo, empieza version desktop */
+@media (min-width: 920px) {
+header {
+    position: sticky;
+    width: 100%;
+    top: 0;
+    z-index: 999;
+}
+
+    header .container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header nav {
+        padding-bottom: 0;
+    }
+
+    .hero .container{
+        padding-top: 0;
+        text-align: left;
+        align-items: flex-start;
+        max-width: 49.5em;
+    }
+
+    .hero .container h1 {
+        font-size: 3.375em;
+    }
+
+    .promos {
+        display: flex;
+
+    }
+
+    .promo-mama p{
+        display: block;
+        margin-bottom: 1em;
+    }
+
+    .testimonial {
+        flex-direction: row;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .testimonial p {
+        max-width: 40em;
+        padding-left: 2em;
+    }
+
+    .testimonial .foto-testimonial {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .servicios-cards .card {
+        max-width: 60ch;
+    }
+
+    .servicios-cards .container {
+        flex-direction: row;
+    }
+
+    .servicios-cards .foto-card {
+        max-width: 10ch;
+        max-height: 10ch;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #nosotros .nosotros-content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #nosotros .container2 {
+        display: flex;
+        flex-direction: row;
+        margin: 1em 2em;
+    }
+
+    #nosotros .nosotros-foto {
+        max-width: 70%;
+        }
+    }
+
+    footer .container {
+        align-items: center;
+        justify-content: center;
+    }
+
+
+
